@@ -1,0 +1,33 @@
+{
+  "name": "midcord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-builder --arm64"
+  },
+  "author": "Ty",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "electron": "^24.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "@electron-forge/maker-flatpak": "^6.1.1",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "build": {
+    "appId": "cloud.tyty.midcord",
+    "linux": {
+      "target": "flatpak"
+    }
+  }
+}
