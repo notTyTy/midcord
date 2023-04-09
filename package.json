@@ -1,6 +1,6 @@
 {
-  "name": "midcord",
-  "version": "1.0.0",
+  "name": "Midcord",
+  "version": "1.0.3",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -27,7 +27,8 @@
   "build": {
     "appId": "cloud.tyty.midcord",
     "linux": {
-      "target": "flatpak"
+      "target": "flatpak",
+      "icon": "icons"
     }
   }
 }
